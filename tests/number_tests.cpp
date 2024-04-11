@@ -63,45 +63,45 @@ class OperationTestsSuite
 };
 
 TEST_P(OperationTestsSuite, AddTest) {
-int2023_t a = from_string(std::get<0>(GetParam()));
-int2023_t b = from_string(std::get<1>(GetParam()));
-
-int2023_t result = a + b;
-int2023_t expected = from_string((std::get<2>(GetParam())));
-
-ASSERT_EQ(result, expected);
+    int2023_t a = from_string(std::get<0>(GetParam()));
+    int2023_t b = from_string(std::get<1>(GetParam()));
+    
+    int2023_t result = a + b;
+    int2023_t expected = from_string((std::get<2>(GetParam())));
+    
+    ASSERT_EQ(result, expected);
 }
 
 TEST_P(OperationTestsSuite, SubstTest) {
-int2023_t a = from_string(std::get<0>(GetParam()));
-int2023_t b = from_string(std::get<1>(GetParam()));
-
-int2023_t result = a - b;
-int2023_t expected = from_string((std::get<3>(GetParam())));
-
-ASSERT_EQ(result, expected);
+    int2023_t a = from_string(std::get<0>(GetParam()));
+    int2023_t b = from_string(std::get<1>(GetParam()));
+    
+    int2023_t result = a - b;
+    int2023_t expected = from_string((std::get<3>(GetParam())));
+    
+    ASSERT_EQ(result, expected);
 }
 
 TEST_P(OperationTestsSuite, MultTest) {
-int2023_t a = from_string(std::get<0>(GetParam()));
-int2023_t b = from_string(std::get<1>(GetParam()));
-
-int2023_t result = a * b;
-int2023_t expected = from_string((std::get<4>(GetParam())));
-
-ASSERT_EQ(result, expected);
+    int2023_t a = from_string(std::get<0>(GetParam()));
+    int2023_t b = from_string(std::get<1>(GetParam()));
+    
+    int2023_t result = a * b;
+    int2023_t expected = from_string((std::get<4>(GetParam())));
+    
+    ASSERT_EQ(result, expected);
 }
 
 TEST_P(OperationTestsSuite, DivTest) {
-int2023_t a = from_string(std::get<0>(GetParam()));
-int2023_t b = from_string(std::get<1>(GetParam()));
-
-if(strcmp(std::get<1>(GetParam()), "0")){
-
-int2023_t result = a / b;
-int2023_t expected = from_string((std::get<5>(GetParam())));
-
-ASSERT_EQ(result, expected);
+    int2023_t a = from_string(std::get<0>(GetParam()));
+    int2023_t b = from_string(std::get<1>(GetParam()));
+    
+    if(strcmp(std::get<1>(GetParam()), "0")){
+    
+    int2023_t result = a / b;
+    int2023_t expected = from_string((std::get<5>(GetParam())));
+    
+    ASSERT_EQ(result, expected);
 }
 }
 
