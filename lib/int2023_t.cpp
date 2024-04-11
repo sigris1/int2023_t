@@ -1,6 +1,6 @@
 #include "int2023_t.h"
-#include <cstring>
-#include <cmath>
+#include "cstring"
+#include "cmath"
 
 const uint32_t kPositiveRate = 64;
 const uint32_t kMaxIndex = 252;
