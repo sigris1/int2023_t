@@ -1,7 +1,7 @@
-#include <int2023_t.h>
-#include <gtest/gtest.h>
-#include <tuple>
-#include <cstring>
+#include "int2023_t.h"
+#include "gtest/gtest.h"
+#include "tuple"
+#include "cstring"
 
 class ConvertingTestsSuite : public testing::TestWithParam<std::tuple<uint32_t, const char*, bool>> {
 };
